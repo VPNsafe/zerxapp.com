@@ -4,11 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
-<!-- deploy-agent: after each release replace both URLs below with the direct DMG link,
-     e.g. https://github.com/VPNsafe/zerx/releases/download/vX.Y.Z/ZerX-X.Y.Z.dmg -->
-<meta http-equiv="refresh" content="0; url=https://github.com/VPNsafe/zerx/releases/latest">
+<!-- deploy-agent: on the first release replace this page with the redirect template from README.md
+     (meta refresh + visible link to https://github.com/VPNsafe/zerx/releases/download/vX.Y.Z/ZerX-X.Y.Z.dmg). -->
 <title>Download ZerX</title>
-<meta name="description" content="Download the latest ZerX for macOS.">
+<meta name="description" content="Download ZerX for macOS.">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#05070D">
 <meta name="color-scheme" content="dark">
@@ -19,15 +18,49 @@
 <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="/" aria-label="ZerX home"><img src="/assets/logo.png" width="111" height="56" alt="ZerX"></a>
+    <nav class="site-nav" aria-label="Site">
+      <ul>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/changelog/">Changelog</a></li>
+        <li><a href="https://github.com/VPNsafe/zerx">GitHub</a></li>
+        <li><a href="https://t.me/ZerXapp">Telegram</a></li>
+        <li><a class="lang" href="/ru/" hreflang="ru" lang="ru">RU</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 <main id="main" class="center">
   <div class="container">
-    <h1>Downloading ZerX…</h1>
-    <p><a href="https://github.com/VPNsafe/zerx/releases/latest">If the download doesn't start, click here</a>.</p>
-    <p class="caption">macOS 13 or later · Apple Silicon and Intel · Free · Notarized by Apple</p>
+    <h1>ZerX 0.1.0 is being notarized.</h1>
+    <p>Follow @ZerXapp on Telegram for the release.</p>
+    <p lang="ru">ZerX 0.1.0 проходит нотаризацию. Следите за релизом в Telegram: @ZerXapp.</p>
     <div class="actions">
+      <a class="btn btn-primary" href="https://t.me/ZerXapp">Telegram: @ZerXapp</a>
       <a class="btn btn-secondary" href="/">Back to zerxapp.com</a>
     </div>
+    <p class="caption">macOS 13 or later · Apple Silicon and Intel · Free · Notarized by Apple</p>
   </div>
 </main>
+
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <p>© 2026 ZerX</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="https://github.com/VPNsafe/zerx">GitHub</a></li>
+        <li><a href="https://t.me/ZerXapp">Telegram</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/changelog/">Changelog</a></li>
+        <li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
 </body>
 </html>
