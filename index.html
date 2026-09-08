@@ -32,7 +32,6 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/style.css">
-<script src="/assets/site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -61,13 +60,9 @@
           <h1 id="hero-title">See what's eating your disk. <span class="grad">Delete it safely.</span></h1>
           <p class="sub">ZerX finds the dev caches, build artifacts and hidden folders Finder never shows — node_modules, DerivedData, package caches, simulator images — and lets you tick what goes to the Trash. Nothing else.</p>
           <div class="hero-cta">
-            <a class="btn btn-primary" href="/download/">Download for macOS</a>
-            <div class="code">
-              <pre><code>brew install --cask vpnsafe/tap/zerx</code></pre>
-              <button type="button" class="copy" data-copy="brew install --cask vpnsafe/tap/zerx" data-done="Copied" aria-label="Copy the Homebrew command">Copy</button>
-            </div>
+            <a class="btn btn-primary" href="https://t.me/ZerXapp">Follow the launch on Telegram</a>
           </div>
-          <p class="caption hero-note">macOS 13 or later · Apple Silicon and Intel · Free · Notarized by Apple</p>
+          <p class="caption hero-note">Coming to the Mac App Store · macOS 13 or later · Apple Silicon and Intel</p>
         </div>
         <div class="hero-art">
           <img src="/assets/icon-1024.png" width="320" height="320" fetchpriority="high" alt="ZerX app icon">
@@ -104,7 +99,7 @@
         <li class="card">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 8.5a16 16 0 0 1 20 0"/><path d="M5 12a11 11 0 0 1 14 0"/><path d="M8.5 15.5a6 6 0 0 1 7 0"/><circle cx="12" cy="19" r="1"/><path d="M3 3l18 18"/></svg>
           <h3>No telemetry, no account, no network</h3>
-          <p>The app never phones home. The update check is off by default and, when you turn it on, talks only to zerxapp.com to read a list of versions.</p>
+          <p>The app never phones home. Updates arrive through the App Store; the direct-download version, when it comes, checks zerxapp.com for updates only if you turn it on.</p>
         </li>
       </ul>
     </div>
@@ -115,8 +110,8 @@
       <h2 id="how-title">Four steps, no wizard</h2>
       <ol class="steps">
         <li>
-          <h3>Grant Full Disk Access</h3>
-          <p>macOS needs it to let ZerX see caches inside ~/Library. ZerX shows you exactly where to click.</p>
+          <h3>Pick your home folder</h3>
+          <p>On first launch macOS shows the standard folder dialog. Choose your home folder once; that's the only place ZerX can read or delete.</p>
         </li>
         <li>
           <h3>Scan</h3>
@@ -128,7 +123,7 @@
         </li>
         <li>
           <h3>Delete to Trash</h3>
-          <p>Empty the Trash when you're sure. Local Time Machine snapshots can go too, with an admin prompt.</p>
+          <p>Empty the Trash when you're sure.</p>
         </li>
       </ol>
     </div>
@@ -154,41 +149,21 @@
     </div>
   </section>
 
-  <section class="section" id="install" aria-labelledby="install-title">
-    <div class="container">
-      <h2 id="install-title">Install</h2>
-      <div class="install-grid">
-        <div>
-          <p>Download the DMG, drag ZerX to Applications, open it. Gatekeeper accepts it: the app is signed with a Developer ID and notarized by Apple.</p>
-          <p><a class="btn btn-primary" href="/download/">Download for macOS</a></p>
-        </div>
-        <div>
-          <p class="caption">Homebrew</p>
-          <div class="code">
-            <pre><code>brew install --cask vpnsafe/tap/zerx</code></pre>
-            <button type="button" class="copy" data-copy="brew install --cask vpnsafe/tap/zerx" data-done="Copied" aria-label="Copy the Homebrew command">Copy</button>
-          </div>
-          <p class="more"><a href="/changelog/">Release notes</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="section" id="faq" aria-labelledby="faq-title">
     <div class="container">
       <h2 id="faq-title">FAQ</h2>
       <div class="faq">
         <details>
-          <summary>Why isn't it in the Mac App Store?</summary>
-          <p>App Store apps run in a sandbox and can't scan or delete across your home folder. ZerX needs Full Disk Access to do its job, so it's distributed directly, signed and notarized by Apple.</p>
+          <summary>Will there be a version outside the App Store?</summary>
+          <p>Yes, later. A direct download signed and notarized by Apple is planned after the App Store release, with extras that need Full Disk Access, such as deleting local Time Machine snapshots.</p>
         </details>
         <details>
           <summary>Is it safe?</summary>
           <p>Deletion goes to the Trash by default. Personal data and system files are on a blocklist that the deletion layer enforces, and that layer is covered by tests. The full list of protected folders is on the <a href="/safety/">Safety page</a>.</p>
         </details>
         <details>
-          <summary>What does Full Disk Access give the app?</summary>
-          <p>Permission to read the folders macOS otherwise hides from apps, such as caches inside ~/Library. ZerX only deletes what you tick.</p>
+          <summary>What access does the app ask for?</summary>
+          <p>On first launch ZerX asks you to pick your home folder in the standard macOS dialog. That's the only folder it can read or delete in. Nothing it reads leaves your Mac.</p>
         </details>
         <details>
           <summary>Can it clean "System Data" from Settings → Storage?</summary>
@@ -200,7 +175,7 @@
         </details>
         <details>
           <summary>How do I uninstall?</summary>
-          <p>Drag ZerX.app to the Trash. With Homebrew: <code>brew uninstall --cask --zap zerx</code>.</p>
+          <p>Drag ZerX.app to the Trash, or delete it from Launchpad.</p>
         </details>
       </div>
     </div>

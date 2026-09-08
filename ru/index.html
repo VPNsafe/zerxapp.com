@@ -32,7 +32,6 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/style.css">
-<script src="/assets/site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">К содержимому</a>
@@ -61,13 +60,9 @@
           <h1 id="hero-title">Покажет, что съело диск. <span class="grad">Удалит безопасно.</span></h1>
           <p class="sub">ZerX находит dev-кэши, артефакты сборки и скрытые папки, которых не видно ни в Finder, ни в «Хранилище»: node_modules, DerivedData, кэши пакетных менеджеров, образы симуляторов. Вы ставите галочки, остальное едет в Корзину. И ничего больше.</p>
           <div class="hero-cta">
-            <a class="btn btn-primary" href="/download/">Скачать для macOS</a>
-            <div class="code">
-              <pre><code>brew install --cask vpnsafe/tap/zerx</code></pre>
-              <button type="button" class="copy" data-copy="brew install --cask vpnsafe/tap/zerx" data-done="Скопировано" aria-label="Скопировать команду Homebrew">Копировать</button>
-            </div>
+            <a class="btn btn-primary" href="https://t.me/ZerXapp">Следить за запуском в Telegram</a>
           </div>
-          <p class="caption hero-note">macOS 13 и новее · Apple Silicon и Intel · Бесплатно · Нотаризовано Apple</p>
+          <p class="caption hero-note">Скоро в Mac App Store · macOS 13 и новее · Apple Silicon и Intel</p>
         </div>
         <div class="hero-art">
           <img src="/assets/icon-1024.png" width="320" height="320" fetchpriority="high" alt="Иконка приложения ZerX">
@@ -104,7 +99,7 @@
         <li class="card">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 8.5a16 16 0 0 1 20 0"/><path d="M5 12a11 11 0 0 1 14 0"/><path d="M8.5 15.5a6 6 0 0 1 7 0"/><circle cx="12" cy="19" r="1"/><path d="M3 3l18 18"/></svg>
           <h3>Без телеметрии, аккаунта и сети</h3>
-          <p>Приложение никуда не стучится. Проверка обновлений выключена по умолчанию, а если включить, обращается только к zerxapp.com за списком версий.</p>
+          <p>Приложение никуда не стучится. Обновления приходят через App Store; прямая версия, когда появится, проверяет обновления на zerxapp.com только если вы это включите.</p>
         </li>
       </ul>
     </div>
@@ -115,8 +110,8 @@
       <h2 id="how-title">Четыре шага, без мастера настройки</h2>
       <ol class="steps">
         <li>
-          <h3>Дайте полный доступ к диску</h3>
-          <p>Без него macOS не показывает кэши внутри ~/Library. ZerX покажет, где именно нажать.</p>
+          <h3>Выберите домашнюю папку</h3>
+          <p>При первом запуске macOS покажет стандартный диалог выбора папки. Выберите домашнюю папку один раз; это единственное место, где ZerX может читать и удалять.</p>
         </li>
         <li>
           <h3>Сканируйте</h3>
@@ -128,7 +123,7 @@
         </li>
         <li>
           <h3>Удалите в Корзину</h3>
-          <p>Очистите Корзину, когда будете уверены. Локальные снимки Time Machine тоже можно удалить, с запросом пароля администратора.</p>
+          <p>Очистите Корзину, когда будете уверены.</p>
         </li>
       </ol>
     </div>
@@ -154,41 +149,21 @@
     </div>
   </section>
 
-  <section class="section" id="install" aria-labelledby="install-title">
-    <div class="container">
-      <h2 id="install-title">Установка</h2>
-      <div class="install-grid">
-        <div>
-          <p>Скачайте DMG, перетащите ZerX в «Программы», откройте. Gatekeeper пропустит: приложение подписано Developer ID и нотаризовано Apple.</p>
-          <p><a class="btn btn-primary" href="/download/">Скачать для macOS</a></p>
-        </div>
-        <div>
-          <p class="caption">Homebrew</p>
-          <div class="code">
-            <pre><code>brew install --cask vpnsafe/tap/zerx</code></pre>
-            <button type="button" class="copy" data-copy="brew install --cask vpnsafe/tap/zerx" data-done="Скопировано" aria-label="Скопировать команду Homebrew">Копировать</button>
-          </div>
-          <p class="more"><a href="/changelog/">История версий</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="section" id="faq" aria-labelledby="faq-title">
     <div class="container">
       <h2 id="faq-title">Вопросы и ответы</h2>
       <div class="faq">
         <details>
-          <summary>Почему не в Mac App Store?</summary>
-          <p>Приложения из App Store работают в песочнице и не могут сканировать и удалять по всей домашней папке. ZerX нужен полный доступ к диску, поэтому он распространяется напрямую, с подписью и нотаризацией Apple.</p>
+          <summary>Будет ли версия вне App Store?</summary>
+          <p>Да, позже. Прямая загрузка с подписью и нотаризацией Apple планируется после выхода в App Store, с функциями, которым нужен полный доступ к диску, например удалением локальных снимков Time Machine.</p>
         </details>
         <details>
           <summary>Это безопасно?</summary>
           <p>Удаление по умолчанию в Корзину. Личные данные и системные файлы в чёрном списке, который проверяется на уровне удаления, и этот уровень покрыт тестами. Полный список защищённых папок — на странице <a href="/ru/safety/">«Безопасность»</a>.</p>
         </details>
         <details>
-          <summary>Что даёт полный доступ к диску?</summary>
-          <p>Право читать папки, которые macOS прячет от приложений, например кэши внутри ~/Library. Удаляет ZerX только то, что вы отметили.</p>
+          <summary>Какой доступ просит приложение?</summary>
+          <p>При первом запуске ZerX просит выбрать вашу домашнюю папку в стандартном диалоге macOS. Это единственная папка, в которой он может читать и удалять. Ничего прочитанное не покидает ваш Mac.</p>
         </details>
         <details>
           <summary>Может ли он почистить «Системные данные» из Хранилища?</summary>
@@ -200,7 +175,7 @@
         </details>
         <details>
           <summary>Как удалить приложение?</summary>
-          <p>Перетащите ZerX.app в Корзину. Через Homebrew: <code>brew uninstall --cask --zap zerx</code>.</p>
+          <p>Перетащите ZerX.app в Корзину или удалите его из Launchpad.</p>
         </details>
       </div>
     </div>

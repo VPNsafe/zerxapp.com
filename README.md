@@ -12,11 +12,11 @@ ru/privacy/index.html   RU privacy
 safety/index.html       EN: what the app will never delete
 ru/safety/index.html    RU
 changelog/index.html    release notes (EN only)
-download/index.html     pre-release notice now; meta-refresh redirect to the DMG after the first release
+download/index.html     "coming to the Mac App Store" notice now; meta-refresh redirect to the DMG after the first direct release
 appcast.xml             Sparkle feed
 404.html                served by Pages for unknown paths
 assets/style.css        the only stylesheet, no build step
-assets/site.js          "Copy" buttons only; the site works without JS
+assets/site.js          "Copy" buttons for code blocks; not loaded by any page in 1.3 (no code blocks until the direct release)
 assets/                 logo.png, icon-1024.png, og.png
 favicon.ico, favicon-16.png, favicon-32.png, apple-touch-icon.png
 robots.txt, sitemap.xml, CNAME, .nojekyll
