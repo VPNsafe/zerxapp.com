@@ -35,6 +35,9 @@ The **deploy agent** of the app repository touches exactly three files on every 
 | `download/index.html` | both URLs (meta refresh + visible link) → `https://github.com/VPNsafe/zerx/releases/download/vX.Y.Z/ZerX-X.Y.Z.dmg` | same commit |
 | `changelog/index.html` | new `<h2>X.Y.Z — Month D, YYYY</h2>` + `<ul>` copied from the app's `CHANGELOG.md`, above the marker comment | same commit |
 
+After editing `download/index.html`, check that both URLs are identical and point at `github.com/VPNsafe/zerx`:
+`grep -o 'https://[^"]*' download/index.html | sort -u` must print exactly one line.
+
 Everything else (pages, styles, graphics, texts) belongs to the **site-dev** agent. Texts are final and
 change only together with `docs/TZ-site.md`.
 
@@ -58,7 +61,8 @@ grep -rhoE 'https?://[^"<) ]+' --include=*.html --include=*.xml . | sort -u   # 
 ## Hosting
 
 GitHub Pages, "Deploy from a branch", `main` / `/ (root)`, custom domain `zerxapp.com` (file `CNAME`),
-"Enforce HTTPS" on once DNS has propagated. DNS at the registrar:
+"Enforce HTTPS" on once DNS has propagated. Also add `zerxapp.com` under GitHub → Settings → Pages → Verified domains for the
+`VPNsafe` account, so the domain cannot be claimed by another Pages site if this repository is ever renamed or removed. DNS at the registrar:
 
 ```
 A     @    185.199.108.153
