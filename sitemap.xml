@@ -25,6 +25,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/privacy/"/>
   </url>
   <url>
+    <loc>https://zerxapp.com/safety/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/safety/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/safety/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/safety/"/>
+  </url>
+  <url>
+    <loc>https://zerxapp.com/ru/safety/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/safety/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/safety/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/safety/"/>
+  </url>
+  <url>
     <loc>https://zerxapp.com/changelog/</loc>
   </url>
 </urlset>

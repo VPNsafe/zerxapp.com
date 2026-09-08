@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<title>ZerX — what it will never delete</title>
+<meta name="description" content="ZerX never deletes Keychains, Mail, Photos, iCloud, SSH keys or system files. The full list of protected folders, enforced in the deletion layer and covered by tests.">
+<link rel="canonical" href="https://zerxapp.com/safety/">
+<link rel="alternate" hreflang="en" href="https://zerxapp.com/safety/">
+<link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/safety/">
+<link rel="alternate" hreflang="x-default" href="https://zerxapp.com/safety/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ZerX">
+<meta property="og:title" content="ZerX — what it will never delete">
+<meta property="og:description" content="ZerX never deletes Keychains, Mail, Photos, iCloud, SSH keys or system files. The full list of protected folders, enforced in the deletion layer and covered by tests.">
+<meta property="og:url" content="https://zerxapp.com/safety/">
+<meta property="og:image" content="https://zerxapp.com/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ZerX — what it will never delete">
+<meta name="twitter:description" content="The full list of folders ZerX never touches, enforced in the deletion layer and covered by tests.">
+<meta name="twitter:image" content="https://zerxapp.com/assets/og.png">
+<meta name="theme-color" content="#05070D">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="/" aria-label="ZerX home"><img src="/assets/logo.png" width="111" height="56" alt="ZerX"></a>
+    <nav class="site-nav" aria-label="Site">
+      <ul>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/changelog/">Changelog</a></li>
+        <li><a href="https://github.com/VPNsafe/zerx-releases">GitHub</a></li>
+        <li><a href="https://t.me/ZerXapp">Telegram</a></li>
+        <li><a class="lang" href="/ru/safety/" hreflang="ru" lang="ru">RU</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="page">
+  <div class="container">
+    <article class="prose">
+      <h1>What ZerX will never delete</h1>
+      <p>ZerX has Full Disk Access, so the rules below are enforced in the deletion layer and covered by tests, not just hidden in the interface.</p>
+
+      <h2>Scope allowlist</h2>
+      <p>Only your home folder, /tmp and /Users/Shared can be touched. The rest of the disk is shown for the picture, not for deletion.</p>
+
+      <h2>Hard blocklist</h2>
+      <p>Keychains, Preferences, Application Support, iCloud, Messages, Mail, Photos, Safari, .ssh, .gnupg, .aws, .kube, shell rc files. Any folder containing a protected path is protected too.</p>
+
+      <h2>One gate</h2>
+      <p>Every deletion passes through a single checkpoint that normalizes the path and re-checks it after resolving symlinks. A symlink into a protected folder doesn't get through. Covered by tests.</p>
+
+      <h2>Always protected</h2>
+      <ul>
+        <li><code>~/Library/Keychains</code></li>
+        <li><code>~/Library/Preferences</code></li>
+        <li><code>~/Library/Application Support</code> (except the app caches listed below)</li>
+        <li>iCloud Drive (Mobile Documents)</li>
+        <li><code>~/Library/CloudStorage</code> (Google Drive, Dropbox, OneDrive)</li>
+        <li>Messages</li>
+        <li>Mail</li>
+        <li>Photos libraries</li>
+        <li>Safari</li>
+        <li>Cookies</li>
+        <li><code>~/.ssh</code></li>
+        <li><code>~/.gnupg</code></li>
+        <li><code>~/.aws</code></li>
+        <li><code>~/.kube</code></li>
+        <li>shell config files (<code>.zshrc</code>, <code>.bashrc</code>, <code>.profile</code>)</li>
+        <li>the system volume and other volumes</li>
+      </ul>
+      <p class="caption">Any folder that contains a protected path is protected too.</p>
+
+      <h2>Containers: contents yes, folder no</h2>
+      <p>Documents, Downloads, Desktop, Library/Caches and other standard folders can be emptied item by item but never deleted themselves.</p>
+
+      <h2>App caches ZerX can offer inside Application Support</h2>
+      <p>Google Drive content cache, VS Code and Cursor caches, Discord, Slack, Spotify, Adobe Media Cache, iPhone backups (MobileSync). Each is a separate checkbox, and ZerX asks you to quit the app first. Nothing else inside Application Support can be touched.</p>
+
+      <h2>Trash, then your call</h2>
+      <p>Everything goes to the Trash. Emptying it is a separate, explicit action. Local Time Machine snapshots are deleted only after an administrator prompt.</p>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <p>© 2026 ZerX</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="https://github.com/VPNsafe/zerx-releases">GitHub</a></li>
+        <li><a href="https://t.me/ZerXapp">Telegram</a></li>
+        <li><a href="/safety/">Safety</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/changelog/">Changelog</a></li>
+        <li><a href="/ru/safety/" hreflang="ru" lang="ru">Русский</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<title>ZerX — что он никогда не удалит</title>
+<meta name="description" content="ZerX никогда не удалит связки ключей, Почту, Фото, iCloud, SSH-ключи и системные файлы. Полный список защищённых папок, проверяемый на уровне удаления и покрытый тестами.">
+<link rel="canonical" href="https://zerxapp.com/ru/safety/">
+<link rel="alternate" hreflang="en" href="https://zerxapp.com/safety/">
+<link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/safety/">
+<link rel="alternate" hreflang="x-default" href="https://zerxapp.com/safety/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ZerX">
+<meta property="og:title" content="ZerX — что он никогда не удалит">
+<meta property="og:description" content="ZerX никогда не удалит связки ключей, Почту, Фото, iCloud, SSH-ключи и системные файлы. Полный список защищённых папок, проверяемый на уровне удаления и покрытый тестами.">
+<meta property="og:url" content="https://zerxapp.com/ru/safety/">
+<meta property="og:image" content="https://zerxapp.com/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ZerX — что он никогда не удалит">
+<meta name="twitter:description" content="Полный список папок, которые ZerX не трогает: проверяется на уровне удаления и покрыт тестами.">
+<meta name="twitter:image" content="https://zerxapp.com/assets/og.png">
+<meta name="theme-color" content="#05070D">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">К содержимому</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="/ru/" aria-label="На главную ZerX"><img src="/assets/logo.png" width="111" height="56" alt="ZerX"></a>
+    <nav class="site-nav" aria-label="Разделы сайта">
+      <ul>
+        <li><a href="/ru/privacy/">Конфиденциальность</a></li>
+        <li><a href="/changelog/">История версий</a></li>
+        <li><a href="https://github.com/VPNsafe/zerx-releases">GitHub</a></li>
+        <li><a href="https://t.me/ZerXapp">Telegram</a></li>
+        <li><a class="lang" href="/safety/" hreflang="en" lang="en">EN</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="page">
+  <div class="container">
+    <article class="prose">
+      <h1>Что ZerX никогда не удалит</h1>
+      <p>У ZerX есть полный доступ к диску, поэтому правила ниже проверяются на уровне удаления и покрыты тестами, а не просто спрятаны в интерфейсе.</p>
+
+      <h2>Белый список области</h2>
+      <p>Трогать можно только домашнюю папку, /tmp и /Users/Shared. Остальной диск показывается для картины, не для удаления.</p>
+
+      <h2>Жёсткий чёрный список</h2>
+      <p>Связки ключей, Preferences, Application Support, iCloud, Сообщения, Почта, Фото, Safari, .ssh, .gnupg, .aws, .kube, rc-файлы shell. Папка, внутри которой есть защищённый путь, тоже защищена.</p>
+
+      <h2>Одна точка удаления</h2>
+      <p>Каждое удаление проходит через единственную проверку: путь нормализуется и перепроверяется после разрешения симлинков. Симлинк в защищённую папку не пройдёт. Покрыто тестами.</p>
+
+      <h2>Всегда защищено</h2>
+      <ul>
+        <li><code>~/Library/Keychains</code></li>
+        <li><code>~/Library/Preferences</code></li>
+        <li><code>~/Library/Application Support</code> (кроме кэшей приложений из списка ниже)</li>
+        <li>iCloud Drive (Mobile Documents)</li>
+        <li><code>~/Library/CloudStorage</code> (Google Drive, Dropbox, OneDrive)</li>
+        <li>Сообщения</li>
+        <li>Почта</li>
+        <li>медиатеки Фото</li>
+        <li>Safari</li>
+        <li>Cookies</li>
+        <li><code>~/.ssh</code></li>
+        <li><code>~/.gnupg</code></li>
+        <li><code>~/.aws</code></li>
+        <li><code>~/.kube</code></li>
+        <li>конфиги shell (<code>.zshrc</code>, <code>.bashrc</code>, <code>.profile</code>)</li>
+        <li>системный том и другие тома</li>
+      </ul>
+      <p class="caption">Папка, внутри которой есть защищённый путь, тоже защищена.</p>
+
+      <h2>Контейнеры: содержимое да, сама папка нет</h2>
+      <p>Документы, Загрузки, Рабочий стол, Library/Caches и другие стандартные папки можно очищать по элементам, но сами папки удалить нельзя.</p>
+
+      <h2>Кэши приложений, которые ZerX предлагает внутри Application Support</h2>
+      <p>Кэш контента Google Drive, кэши VS Code и Cursor, Discord, Slack, Spotify, Adobe Media Cache, резервные копии iPhone (MobileSync). Каждый — отдельная галочка, и ZerX попросит сначала закрыть приложение. Больше ничего внутри Application Support тронуть нельзя.</p>
+
+      <h2>Корзина, дальше решаете вы</h2>
+      <p>Всё отправляется в Корзину. Очистка Корзины — отдельное явное действие. Локальные снимки Time Machine удаляются только после запроса пароля администратора.</p>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <p>© 2026 ZerX</p>
+    <nav aria-label="Подвал">
+      <ul>
+        <li><a href="https://github.com/VPNsafe/zerx-releases">GitHub</a></li>
+        <li><a href="https://t.me/ZerXapp">Telegram</a></li>
+        <li><a href="/ru/safety/">Безопасность</a></li>
+        <li><a href="/ru/privacy/">Конфиденциальность</a></li>
+        <li><a href="/changelog/">История версий</a></li>
+        <li><a href="/safety/" hreflang="en" lang="en">English</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
