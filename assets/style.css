@@ -224,7 +224,7 @@ p code, li code, h2 code { background: var(--surface); border: 1px solid var(--b
 .center { padding: 120px 0; text-align: center; }
 .center h1 { margin-bottom: 16px; }
 .center p { color: var(--muted); max-width: 520px; margin: 0 auto 16px; }
-.center .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 28px; }
+.center .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 28px 0; }
 
 /* Footer */
 .site-footer { border-top: 1px solid var(--border); padding: 36px 0; color: var(--muted); font-size: 14px; line-height: 20px; }
