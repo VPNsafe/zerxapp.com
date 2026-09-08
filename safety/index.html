@@ -57,7 +57,7 @@
       <p>ZerX can see everything inside the folder you grant it, so the rules below are enforced in the deletion layer and covered by tests, not just hidden in the interface.</p>
 
       <h2>Scope allowlist</h2>
-      <p>Only your home folder, /tmp and /Users/Shared can be touched. The rest of the disk is shown for the picture, not for deletion.</p>
+      <p>Only the folder you granted, normally your home folder, can be touched. The rest of the disk is shown for the picture, not for deletion.</p>
 
       <h2>Hard blocklist</h2>
       <p>Keychains, Preferences, Application Support, iCloud, Messages, Mail, Photos, Safari, .ssh, .gnupg, .aws, .kube, shell rc files. Any folder containing a protected path is protected too.</p>
@@ -90,7 +90,7 @@
       <p>Documents, Downloads, Desktop, Library/Caches and other standard folders can be emptied item by item but never deleted themselves.</p>
 
       <h2>App caches ZerX can offer inside Application Support</h2>
-      <p>Google Drive content cache, VS Code and Cursor caches, Discord, Slack, Spotify, Adobe Media Cache, iPhone backups (MobileSync). Each is a separate checkbox, and ZerX asks you to quit the app first. Nothing else inside Application Support can be touched.</p>
+      <p>Google Drive content cache, VS Code and Cursor caches, Discord, Slack, Spotify, Adobe Media Cache, iPhone backups (MobileSync). Each is a separate checkbox; if the owning app is running, ZerX asks you to quit it first. Nothing else inside Application Support can be touched.</p>
 
       <h2>Trash, then your call</h2>
       <p>Everything goes to the Trash. Emptying it is a separate, explicit action. Local Time Machine snapshots can be removed only in the direct-download version, after an administrator prompt.</p>
