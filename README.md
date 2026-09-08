@@ -48,7 +48,7 @@ repository is private and `releases/latest` answers 404. Redirect template for t
 <p><a href="https://github.com/VPNsafe/zerx-releases/releases/download/vX.Y.Z/ZerX-X.Y.Z.dmg">If the download doesn't start, click here</a>.</p>
 ```
 
-After editing `download/index.html`, check that both URLs are identical and point at `github.com/VPNsafe/zerx`:
+After editing `download/index.html`, check that both URLs are identical and point at `github.com/VPNsafe/zerx-releases`:
 `grep -o 'https://github[^"]*' download/index.html | sort -u` must print exactly one line.
 
 Everything else (pages, styles, graphics, texts) belongs to the **site-dev** agent. Texts are final and
