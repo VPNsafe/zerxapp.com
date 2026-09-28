@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <title>ZerX — see what's eating your Mac's disk, delete it safely</title>
-<meta name="description" content="ZerX finds the dev caches, build artifacts and hidden folders Finder never shows, and lets you tick what goes to the Trash. No telemetry, no account, no network.">
+<meta name="description" content="ZerX finds the dev caches, build artifacts and hidden folders that are easy to overlook in Finder, and lets you tick what goes to the Trash. No telemetry, no account, no network.">
 <link rel="canonical" href="https://zerxapp.com/">
 <link rel="alternate" hreflang="en" href="https://zerxapp.com/">
 <link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/">
@@ -13,7 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ZerX">
 <meta property="og:title" content="ZerX — see what's eating your Mac's disk, delete it safely">
-<meta property="og:description" content="ZerX finds the dev caches, build artifacts and hidden folders Finder never shows, and lets you tick what goes to the Trash. No telemetry, no account, no network.">
+<meta property="og:description" content="ZerX finds the dev caches, build artifacts and hidden folders that are easy to overlook in Finder, and lets you tick what goes to the Trash. No telemetry, no account, no network.">
 <meta property="og:url" content="https://zerxapp.com/">
 <meta property="og:image" content="https://zerxapp.com/assets/og.png">
 <meta property="og:image:width" content="1200">
@@ -23,7 +23,7 @@
 <meta property="og:locale:alternate" content="ru_RU">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="ZerX — see what's eating your Mac's disk, delete it safely">
-<meta name="twitter:description" content="ZerX finds the dev caches, build artifacts and hidden folders Finder never shows, and lets you tick what goes to the Trash. No telemetry, no account, no network.">
+<meta name="twitter:description" content="ZerX finds the dev caches, build artifacts and hidden folders that are easy to overlook in Finder, and lets you tick what goes to the Trash. No telemetry, no account, no network.">
 <meta name="twitter:image" content="https://zerxapp.com/assets/og.png">
 <meta name="theme-color" content="#05070D">
 <meta name="color-scheme" content="dark">
@@ -42,6 +42,7 @@
     <nav class="site-nav" aria-label="Site">
       <ul>
         <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/support/">Support</a></li>
         <li><a href="/changelog/">Changelog</a></li>
         <li><a href="https://github.com/VPNsafe/zerx-releases">GitHub</a></li>
         <li><a href="https://t.me/ZerXapp">Telegram</a></li>
@@ -58,7 +59,7 @@
       <div class="hero-grid">
         <div class="hero-copy">
           <h1 id="hero-title">See what's eating your disk. <span class="grad">Delete it safely.</span></h1>
-          <p class="sub">ZerX finds the dev caches, build artifacts and hidden folders Finder never shows — node_modules, DerivedData, package caches, simulator images — and lets you tick what goes to the Trash. Nothing else.</p>
+          <p class="sub">ZerX finds the dev caches, build artifacts and hidden folders that are easy to overlook in Finder — node_modules, DerivedData, package caches, simulator images — and lets you tick what goes to the Trash. Review the selection before confirming deletion.</p>
           <div class="hero-cta">
             <a class="btn btn-primary" href="https://t.me/ZerXapp">Follow the launch on Telegram</a>
           </div>
@@ -83,13 +84,13 @@
       <ul class="cards">
         <li class="card">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
-          <h3>Sees what Finder hides</h3>
-          <p>Hidden dev folders, package manager caches, DerivedData, worktrees left by AI agents, Docker images, simulators. A full 250 GB home folder scans in about 15 seconds.</p>
+          <h3>Find hidden dev files</h3>
+          <p>Hidden dev folders, package manager caches, DerivedData, worktrees left by AI agents, Docker images, simulators. Scan time depends on your disk, file count and permissions.</p>
         </li>
         <li class="card">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16"/><path d="M9 7V4.5A1.5 1.5 0 0 1 10.5 3h3A1.5 1.5 0 0 1 15 4.5V7"/><path d="M6 7l1 12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-12"/><path d="M10 11v6M14 11v6"/></svg>
-          <h3>Trash first, never past it</h3>
-          <p>Everything you delete goes to the Trash by default. Keychains, Mail, Photos, iCloud, SSH keys and system files are off-limits at the architecture level, not just hidden in the UI.</p>
+          <h3>Trash by default</h3>
+          <p>Items move to the Trash by default and can be restored in Finder until you empty it. Permanent deletion is a separate setting, off by default, and requires confirmation; it cannot be undone. See the <a href="/safety/">protected folders and exceptions</a>.</p>
         </li>
         <li class="card">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h4l2.5-6 4 12 2.5-6h5"/></svg>
@@ -111,11 +112,11 @@
       <ol class="steps">
         <li>
           <h3>Allow access once</h3>
-          <p>On first launch ZerX asks macOS for permission to see your files. A system dialog opens with your home folder already selected; you just click “Grant Access”. That's the only place ZerX can read or delete.</p>
+          <p>Choose your home folder or another folder in the standard macOS dialog. ZerX scans and cleans accessible items within the folder you authorize, subject to macOS sandbox and privacy restrictions. Some protected locations remain inaccessible. File names, contents and scan results are not sent to the developer.</p>
         </li>
         <li>
           <h3>Scan</h3>
-          <p>Your home folder plus system caches, sized like Finder does it. Numbers tick while it runs.</p>
+          <p>Your selected folder and accessible caches, with sizes updating during the scan.</p>
         </li>
         <li>
           <h3>Review and tick</h3>
@@ -139,7 +140,7 @@
         </li>
         <li>
           <h3>Hard blocklist</h3>
-          <p>Keychains, Preferences, Application Support, iCloud, Messages, Mail, Photos, Safari, .ssh, .gnupg, .aws, .kube, shell rc files. Any folder containing a protected path is protected too.</p>
+          <p>Keychains, Preferences, Application Support (except specific caches and iPhone backups listed on the Safety page), iCloud, Messages, Mail, Photos, Safari, .ssh, .gnupg, .aws, .kube, shell rc files. Any folder containing a protected path is protected too.</p>
         </li>
         <li>
           <h3>One gate</h3>
@@ -163,11 +164,11 @@
         </details>
         <details>
           <summary>What access does the app ask for?</summary>
-          <p>Permission to see your files, granted once in a standard macOS dialog with your home folder already open. That's the only place it can read or delete in. Nothing it reads leaves your Mac.</p>
+          <p>Choose your home folder or another folder in the standard macOS dialog. ZerX scans and cleans accessible items within the folder you authorize, subject to macOS sandbox and privacy restrictions. Some protected locations remain inaccessible. File names, contents and scan results are not sent to the developer.</p>
         </details>
         <details>
           <summary>Can it clean "System Data" from Settings → Storage?</summary>
-          <p>It shows what's inside that number — caches, logs, local Time Machine snapshots — and lets you remove the parts that are safe to remove.</p>
+          <p>ZerX helps find accessible caches and logs that may contribute to System Data. The App Store version cannot clean the entire category or delete Time Machine snapshots. macOS may report storage differently.</p>
         </details>
         <details>
           <summary>Does it cost anything?</summary>
@@ -175,7 +176,7 @@
         </details>
         <details>
           <summary>How do I uninstall?</summary>
-          <p>Drag ZerX.app to the Trash, or delete it from Launchpad.</p>
+          <p>Quit ZerX and move ZerX.app to the Trash in Finder. Local settings may remain in its macOS container; see the <a href="/privacy/">privacy policy</a>.</p>
         </details>
       </div>
     </div>
@@ -192,6 +193,7 @@
         <li><a href="https://t.me/ZerXapp">Telegram</a></li>
         <li><a href="/safety/">Safety</a></li>
         <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/support/">Support</a></li>
         <li><a href="/changelog/">Changelog</a></li>
         <li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li>
       </ul>

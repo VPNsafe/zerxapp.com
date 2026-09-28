@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <title>Privacy — ZerX</title>
-<meta name="description" content="ZerX collects nothing: no analytics, no crash reporting, no account, no network code. What the optional update check and this website do with your data.">
+<meta name="description" content="How ZerX processes files locally, stores settings and handles permissions, updates and support requests.">
 <link rel="canonical" href="https://zerxapp.com/privacy/">
 <link rel="alternate" hreflang="en" href="https://zerxapp.com/privacy/">
 <link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/privacy/">
@@ -13,7 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ZerX">
 <meta property="og:title" content="Privacy — ZerX">
-<meta property="og:description" content="ZerX collects nothing: no analytics, no crash reporting, no account, no network code. What the optional update check and this website do with your data.">
+<meta property="og:description" content="How ZerX processes files locally, stores settings and handles permissions, updates and support requests.">
 <meta property="og:url" content="https://zerxapp.com/privacy/">
 <meta property="og:image" content="https://zerxapp.com/assets/og.png">
 <meta property="og:image:width" content="1200">
@@ -22,7 +22,7 @@
 <meta property="og:locale:alternate" content="ru_RU">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Privacy — ZerX">
-<meta name="twitter:description" content="ZerX collects nothing: no analytics, no crash reporting, no account, no network code.">
+<meta name="twitter:description" content="How ZerX processes files locally, stores settings and handles permissions, updates and support requests.">
 <meta name="twitter:image" content="https://zerxapp.com/assets/og.png">
 <meta name="theme-color" content="#05070D">
 <meta name="color-scheme" content="dark">
@@ -41,6 +41,7 @@
     <nav class="site-nav" aria-label="Site">
       <ul>
         <li><a href="/privacy/" aria-current="page">Privacy</a></li>
+        <li><a href="/support/">Support</a></li>
         <li><a href="/changelog/">Changelog</a></li>
         <li><a href="https://github.com/VPNsafe/zerx-releases">GitHub</a></li>
         <li><a href="https://t.me/ZerXapp">Telegram</a></li>
@@ -53,22 +54,21 @@
 <main id="main" class="page">
   <div class="container">
     <article class="prose">
-      <h1>Privacy</h1>
-      <p class="caption meta">Effective <time datetime="2026-09-08">September 8, 2026</time></p>
-
-      <p>ZerX collects nothing. The app has no analytics, no crash reporting, no account and no network code, with one exception below.</p>
-
-      <h2>Updates</h2>
-      <p>The App Store version updates through the App Store and makes no requests of its own. The direct-download version (planned) has an update check that is off by default; when on, it downloads <a href="/appcast.xml">https://zerxapp.com/appcast.xml</a> over HTTPS with no identifiers.</p>
-
-      <h2>Access to your files</h2>
-      <p>On first launch you allow access once in the standard macOS dialog, with your home folder already open; that is the only place ZerX can read or delete. Nothing it reads leaves your Mac.</p>
-
-      <h2>This website</h2>
-      <p>No cookies, no analytics, no third-party scripts or fonts. It is hosted on GitHub Pages; GitHub may keep standard server logs under its privacy policy.</p>
-
-      <h2>Contact</h2>
-      <p>Open an issue on <a href="https://github.com/VPNsafe/zerx-releases/issues">GitHub (zerx-releases)</a> or write in the <a href="https://t.me/ZerXapp">Telegram channel</a>.</p>
+<h1>Privacy</h1>
+<p class="caption meta">Effective <time datetime="2026-09-29">September 29, 2026</time></p>
+<h2>Developer and local processing</h2>
+<p>ZerX is developed by Viacheslav Kuzmin. The App Store app does not send file names, file contents, scan results or usage data to the developer. It has no account, analytics, advertising or crash-reporting service. Files are processed on your Mac to calculate storage use and carry out deletion only when you confirm it.</p>
+<h2>Access to your files</h2><p>Choose your home folder or another folder in the standard macOS dialog. ZerX scans and cleans accessible items within the folder you authorize, subject to macOS sandbox and privacy restrictions. Some protected locations remain inaccessible. File names, contents and scan results are not sent to the developer. Use Settings → File Access to select a different folder. Quitting ZerX ends its active access for that session; the saved permission can be used when you reopen it.</p>
+<h2>Storage and deletion</h2>
+<p>Scan results are held in memory during the session, replaced by later scans and discarded when the app exits. Preferences, including language, and a security-scoped folder bookmark are stored locally by macOS to remember your choices. They remain until reset or removed locally and are not uploaded. Removing only ZerX.app may leave these settings in its macOS container. Contact support for help removing local settings.</p>
+<p>Items move to the Trash by default and can be restored in Finder until you empty it. Permanent deletion is a separate setting, off by default, and requires confirmation; it cannot be undone. Deleting selected files and removing ZerX settings are separate actions. The developer holds no account or server-side scan history to delete.</p>
+<h2>Updates</h2>
+<p>The App Store version updates through the App Store and makes no update requests itself. The planned direct-download version uses an optional update check, off by default, that requests the update feed on this website when enabled. The hosting service may receive ordinary connection data such as your IP address.</p>
+<h2>This website</h2>
+<p>This website uses no cookies, analytics, third-party scripts or external fonts. It is hosted on GitHub Pages. GitHub may process connection data and server logs according to its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>; its retention rules apply to those logs.</p>
+<h2>Support and privacy requests</h2>
+<p>See <a href="/support/">Support</a> to contact the developer about ZerX or this policy. If you contact us, we receive the information you choose to share to handle your request. Do not include file contents or sensitive paths. GitHub Issues are public. GitHub and Telegram process messages under their own policies: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a> and <a href="https://telegram.org/privacy">Telegram</a>. Messages may remain in those services according to their policies and your account settings. ZerX does not send support requests automatically.</p>
+<h2>Changes</h2><p>Updates to this policy will appear on this page with a revised effective date.</p>
     </article>
   </div>
 </main>
@@ -82,6 +82,7 @@
         <li><a href="https://t.me/ZerXapp">Telegram</a></li>
         <li><a href="/safety/">Safety</a></li>
         <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/support/">Support</a></li>
         <li><a href="/changelog/">Changelog</a></li>
         <li><a href="/ru/privacy/" hreflang="ru" lang="ru">Русский</a></li>
       </ul>

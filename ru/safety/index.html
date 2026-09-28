@@ -41,6 +41,7 @@
     <nav class="site-nav" aria-label="Разделы сайта">
       <ul>
         <li><a href="/ru/privacy/">Конфиденциальность</a></li>
+        <li><a href="/ru/support/">Поддержка</a></li>
         <li><a href="/changelog/">История версий</a></li>
         <li><a href="https://github.com/VPNsafe/zerx-releases">GitHub</a></li>
         <li><a href="https://t.me/ZerXapp">Telegram</a></li>
@@ -60,7 +61,7 @@
       <p>Трогать можно только папку, к которой вы дали доступ, обычно домашнюю. Остальной диск показывается для картины, не для удаления.</p>
 
       <h2>Жёсткий чёрный список</h2>
-      <p>Связки ключей, Preferences, Application Support, iCloud, Сообщения, Почта, Фото, Safari, .ssh, .gnupg, .aws, .kube, rc-файлы shell. Папка, внутри которой есть защищённый путь, тоже защищена.</p>
+      <p>Связки ключей, Preferences, Application Support (кроме отдельных кэшей и резервных копий iPhone, перечисленных на странице безопасности), iCloud, Сообщения, Почта, Фото, Safari, .ssh, .gnupg, .aws, .kube, rc-файлы shell. Папка, внутри которой есть защищённый путь, тоже защищена.</p>
 
       <h2>Одна точка удаления</h2>
       <p>Каждое удаление проходит через единственную проверку: путь нормализуется и перепроверяется после разрешения симлинков. Симлинк в защищённую папку не пройдёт. Покрыто тестами.</p>
@@ -69,7 +70,7 @@
       <ul>
         <li><code>~/Library/Keychains</code></li>
         <li><code>~/Library/Preferences</code></li>
-        <li><code>~/Library/Application Support</code> (кроме кэшей приложений из списка ниже)</li>
+        <li><code>~/Library/Application Support</code> (кроме кэшей и резервных копий iPhone из списка ниже)</li>
         <li>iCloud Drive (Mobile Documents)</li>
         <li><code>~/Library/CloudStorage</code> (Google Drive, Dropbox, OneDrive)</li>
         <li>Сообщения</li>
@@ -93,7 +94,7 @@
       <p>Кэш контента Google Drive, кэши VS Code и Cursor, Discord, Slack, Spotify, Adobe Media Cache, резервные копии iPhone (MobileSync). Каждый — отдельная галочка; если приложение-владелец запущено, ZerX попросит сначала его закрыть. Больше ничего внутри Application Support тронуть нельзя.</p>
 
       <h2>Корзина, дальше решаете вы</h2>
-      <p>Всё уходит в Корзину. Очистка Корзины — отдельное явное действие. Локальные снимки Time Machine удаляются только в прямой версии, после запроса пароля администратора.</p>
+      <p>По умолчанию файлы перемещаются в Корзину: их можно восстановить в Finder, пока Корзина не очищена. Безвозвратное удаление включается отдельно, по умолчанию выключено и требует подтверждения; отменить его нельзя. Чтобы освободить место, отдельно очистите Корзину в Finder. Версия App Store не удаляет снимки Time Machine.</p>
     </article>
   </div>
 </main>
@@ -107,6 +108,7 @@
         <li><a href="https://t.me/ZerXapp">Telegram</a></li>
         <li><a href="/ru/safety/">Безопасность</a></li>
         <li><a href="/ru/privacy/">Конфиденциальность</a></li>
+        <li><a href="/ru/support/">Поддержка</a></li>
         <li><a href="/changelog/">История версий</a></li>
         <li><a href="/safety/" hreflang="en" lang="en">English</a></li>
       </ul>

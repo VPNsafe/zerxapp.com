@@ -90,3 +90,7 @@ CNAME www  vpnsafe.github.io
 ```
 
 Check: `dig +short zerxapp.com` shows the four A records; `curl -sI https://zerxapp.com/appcast.xml` returns `200` with an XML content type and no redirect.
+
+## September 29, 2026 — App Store preparation
+
+Added EN/RU support pages, local data retention/deletion details, accurate sandbox and permanent-deletion descriptions, support navigation and sitemap entries. External privacy/license links are ordinary links, not background requests. Public support email remains to be supplied by the owner.

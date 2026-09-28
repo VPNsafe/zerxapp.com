@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <title>ZerX — покажет, что съело диск на Mac, и удалит это безопасно</title>
-<meta name="description" content="ZerX находит dev-кэши, артефакты сборки и скрытые папки, которых не видно в Finder, и даёт галочками выбрать, что отправить в Корзину. Без телеметрии, аккаунта и сети.">
+<meta name="description" content="ZerX находит dev-кэши, артефакты сборки и скрытые папки, которые легко упустить в Finder, и даёт галочками выбрать, что отправить в Корзину. Без телеметрии, аккаунта и сети.">
 <link rel="canonical" href="https://zerxapp.com/ru/">
 <link rel="alternate" hreflang="en" href="https://zerxapp.com/">
 <link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/">
@@ -13,7 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ZerX">
 <meta property="og:title" content="ZerX — покажет, что съело диск на Mac, и удалит это безопасно">
-<meta property="og:description" content="ZerX находит dev-кэши, артефакты сборки и скрытые папки, которых не видно в Finder, и даёт галочками выбрать, что отправить в Корзину. Без телеметрии, аккаунта и сети.">
+<meta property="og:description" content="ZerX находит dev-кэши, артефакты сборки и скрытые папки, которые легко упустить в Finder, и даёт галочками выбрать, что отправить в Корзину. Без телеметрии, аккаунта и сети.">
 <meta property="og:url" content="https://zerxapp.com/ru/">
 <meta property="og:image" content="https://zerxapp.com/assets/og.png">
 <meta property="og:image:width" content="1200">
@@ -23,7 +23,7 @@
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="ZerX — покажет, что съело диск на Mac, и удалит это безопасно">
-<meta name="twitter:description" content="ZerX находит dev-кэши, артефакты сборки и скрытые папки, которых не видно в Finder, и даёт галочками выбрать, что отправить в Корзину. Без телеметрии, аккаунта и сети.">
+<meta name="twitter:description" content="ZerX находит dev-кэши, артефакты сборки и скрытые папки, которые легко упустить в Finder, и даёт галочками выбрать, что отправить в Корзину. Без телеметрии, аккаунта и сети.">
 <meta name="twitter:image" content="https://zerxapp.com/assets/og.png">
 <meta name="theme-color" content="#05070D">
 <meta name="color-scheme" content="dark">
@@ -42,6 +42,7 @@
     <nav class="site-nav" aria-label="Разделы сайта">
       <ul>
         <li><a href="/ru/privacy/">Конфиденциальность</a></li>
+        <li><a href="/ru/support/">Поддержка</a></li>
         <li><a href="/changelog/">История версий</a></li>
         <li><a href="https://github.com/VPNsafe/zerx-releases">GitHub</a></li>
         <li><a href="https://t.me/ZerXapp">Telegram</a></li>
@@ -58,7 +59,7 @@
       <div class="hero-grid">
         <div class="hero-copy">
           <h1 id="hero-title">Покажет, что съело диск. <span class="grad">Удалит безопасно.</span></h1>
-          <p class="sub">ZerX находит dev-кэши, артефакты сборки и скрытые папки, которых не видно ни в Finder, ни в «Хранилище»: node_modules, DerivedData, кэши пакетных менеджеров, образы симуляторов. Вы ставите галочки, остальное едет в Корзину. И ничего больше.</p>
+          <p class="sub">ZerX находит dev-кэши, артефакты сборки и скрытые папки, которые легко упустить при обычном просмотре: node_modules, DerivedData, кэши пакетных менеджеров, образы симуляторов. Вы выбираете файлы и проверяете список перед подтверждением удаления.</p>
           <div class="hero-cta">
             <a class="btn btn-primary" href="https://t.me/ZerXapp">Следить за запуском в Telegram</a>
           </div>
@@ -83,13 +84,13 @@
       <ul class="cards">
         <li class="card">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
-          <h3>Видит то, что прячет Finder</h3>
-          <p>Скрытые dev-папки, кэши пакетных менеджеров, DerivedData, worktree от AI-агентов, образы Docker, симуляторы. Домашняя папка на 250 ГБ сканируется примерно за 15 секунд.</p>
+          <h3>Находит скрытые dev-файлы</h3>
+          <p>Скрытые dev-папки, кэши пакетных менеджеров, DerivedData, worktree от AI-агентов, образы Docker, симуляторы. Время сканирования зависит от диска, числа файлов и разрешений.</p>
         </li>
         <li class="card">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16"/><path d="M9 7V4.5A1.5 1.5 0 0 1 10.5 3h3A1.5 1.5 0 0 1 15 4.5V7"/><path d="M6 7l1 12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-12"/><path d="M10 11v6M14 11v6"/></svg>
-          <h3>Сначала Корзина, дальше — никогда</h3>
-          <p>Всё удалённое по умолчанию попадает в Корзину. Связки ключей, Почта, Фото, iCloud, SSH-ключи и системные файлы недоступны на уровне архитектуры, а не спрятаны в интерфейсе.</p>
+          <h3>По умолчанию — в Корзину</h3>
+          <p>По умолчанию файлы перемещаются в Корзину: их можно восстановить в Finder, пока Корзина не очищена. Безвозвратное удаление включается отдельно, по умолчанию выключено и требует подтверждения; отменить его нельзя. Подробнее: <a href="/ru/safety/">защищённые папки и исключения</a>.</p>
         </li>
         <li class="card">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h4l2.5-6 4 12 2.5-6h5"/></svg>
@@ -111,11 +112,11 @@
       <ol class="steps">
         <li>
           <h3>Разрешите доступ один раз</h3>
-          <p>При первом запуске ZerX просит у macOS разрешение видеть ваши файлы. Откроется системное окно с уже открытой домашней папкой; вы просто нажимаете «Разрешить доступ». Это единственное место, где ZerX может читать и удалять.</p>
+          <p>Выберите домашнюю или другую папку в стандартном диалоге macOS. ZerX сканирует и очищает доступное содержимое выбранной папки с учётом ограничений песочницы и защиты macOS. Некоторые расположения остаются недоступны. Имена и содержимое файлов, а также результаты сканирования не отправляются разработчику.</p>
         </li>
         <li>
           <h3>Сканируйте</h3>
-          <p>Домашняя папка и системные кэши, размеры как в Finder. Цифры тикают прямо во время скана.</p>
+          <p>Выбранная папка и доступные кэши. Размеры обновляются прямо во время сканирования.</p>
         </li>
         <li>
           <h3>Проверьте галочки</h3>
@@ -139,7 +140,7 @@
         </li>
         <li>
           <h3>Жёсткий чёрный список</h3>
-          <p>Связки ключей, Preferences, Application Support, iCloud, Сообщения, Почта, Фото, Safari, .ssh, .gnupg, .aws, .kube, rc-файлы shell. Папка, внутри которой есть защищённый путь, тоже защищена.</p>
+          <p>Связки ключей, Preferences, Application Support (кроме отдельных кэшей и резервных копий iPhone, перечисленных на странице безопасности), iCloud, Сообщения, Почта, Фото, Safari, .ssh, .gnupg, .aws, .kube, rc-файлы shell. Папка, внутри которой есть защищённый путь, тоже защищена.</p>
         </li>
         <li>
           <h3>Одна точка удаления</h3>
@@ -163,11 +164,11 @@
         </details>
         <details>
           <summary>Какой доступ просит приложение?</summary>
-          <p>Разрешение видеть ваши файлы, один раз, в стандартном окне macOS с уже открытой домашней папкой. Это единственное место, где он может читать и удалять. Ничего прочитанное не покидает ваш Mac.</p>
+          <p>Выберите домашнюю или другую папку в стандартном диалоге macOS. ZerX сканирует и очищает доступное содержимое выбранной папки с учётом ограничений песочницы и защиты macOS. Некоторые расположения остаются недоступны. Имена и содержимое файлов, а также результаты сканирования не отправляются разработчику.</p>
         </details>
         <details>
           <summary>Может ли он почистить «Системные данные» из Хранилища?</summary>
-          <p>Он показывает, из чего состоит эта цифра: кэши, логи, локальные снимки Time Machine, и даёт удалить то, что удалять безопасно.</p>
+          <p>ZerX помогает найти доступные кэши и логи, которые могут входить в «Системные данные». Версия App Store не очищает всю эту категорию и не удаляет снимки Time Machine. macOS может иначе учитывать занятое место.</p>
         </details>
         <details>
           <summary>Сколько стоит?</summary>
@@ -175,7 +176,7 @@
         </details>
         <details>
           <summary>Как удалить приложение?</summary>
-          <p>Перетащите ZerX.app в Корзину или удалите его из Launchpad.</p>
+          <p>Закройте ZerX и переместите ZerX.app в Корзину в Finder. Локальные настройки могут остаться в контейнере macOS; подробнее — в <a href="/ru/privacy/">политике конфиденциальности</a>.</p>
         </details>
       </div>
     </div>
@@ -192,6 +193,7 @@
         <li><a href="https://t.me/ZerXapp">Telegram</a></li>
         <li><a href="/ru/safety/">Безопасность</a></li>
         <li><a href="/ru/privacy/">Конфиденциальность</a></li>
+        <li><a href="/ru/support/">Поддержка</a></li>
         <li><a href="/changelog/">История версий</a></li>
         <li><a href="/" hreflang="en" lang="en">English</a></li>
       </ul>
