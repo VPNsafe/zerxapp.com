@@ -93,4 +93,4 @@ Check: `dig +short zerxapp.com` shows the four A records; `curl -sI https://zerx
 
 ## September 29, 2026 — App Store preparation
 
-Added EN/RU support pages, local data retention/deletion details, accurate sandbox and permanent-deletion descriptions, support navigation and sitemap entries. External privacy/license links are ordinary links, not background requests. Public support email remains to be supplied by the owner.
+Added EN/RU support pages, local data retention/deletion details, accurate sandbox and permanent-deletion descriptions, support navigation and sitemap entries. External privacy/license links are ordinary links, not background requests. Public support email supplied by the owner: support@techdatacloud.org (listed on EN/RU support and privacy pages).
