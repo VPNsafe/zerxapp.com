@@ -5,12 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <title>Changelog — ZerX</title>
-<meta name="description" content="Release notes for ZerX, the Mac disk analyzer and cleaner.">
+<meta name="description" content="Release notes for ZerX, the Mac and Windows disk analyzer.">
 <link rel="canonical" href="https://zerxapp.com/changelog/">
+<link rel="alternate" hreflang="en" href="https://zerxapp.com/changelog/">
+<link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/changelog/">
+<link rel="alternate" hreflang="x-default" href="https://zerxapp.com/changelog/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ZerX">
 <meta property="og:title" content="Changelog — ZerX">
-<meta property="og:description" content="Release notes for ZerX, the Mac disk analyzer and cleaner.">
+<meta property="og:description" content="Release notes for ZerX, the Mac and Windows disk analyzer.">
 <meta property="og:url" content="https://zerxapp.com/changelog/">
 <meta property="og:image" content="https://zerxapp.com/assets/icon-1024.png">
 <meta property="og:image:width" content="1024">
@@ -18,7 +21,7 @@
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Changelog — ZerX">
-<meta name="twitter:description" content="Release notes for ZerX, the Mac disk analyzer and cleaner.">
+<meta name="twitter:description" content="Release notes for ZerX, the Mac and Windows disk analyzer.">
 <meta name="twitter:image" content="https://zerxapp.com/assets/icon-1024.png">
 <meta name="theme-color" content="#05070D">
 <meta name="color-scheme" content="dark">
@@ -36,12 +39,14 @@
     <a class="brand" href="/" aria-label="ZerX home"><img src="/assets/logo.png" width="111" height="56" alt="ZerX"></a>
     <nav class="site-nav" aria-label="Site">
       <ul>
+        <li><a href="/download/">Download</a></li>
+        <li><a href="/windows/">Windows</a></li>
         <li><a href="/privacy/">Privacy</a></li>
         <li><a href="/support/">Support</a></li>
         <li><a href="/changelog/" aria-current="page">Changelog</a></li>
         <li><a href="https://github.com/VPNsafe/zerx-releases">GitHub</a></li>
         <li><a href="https://t.me/ZerXapp">Telegram</a></li>
-        <li><a class="lang" href="/ru/" hreflang="ru" lang="ru">RU</a></li>
+        <li><a class="lang" href="/ru/changelog/" hreflang="ru" lang="ru">RU</a></li>
       </ul>
     </nav>
   </div>
@@ -54,9 +59,10 @@
       <p class="caption meta">Public releases of ZerX, newest first.</p>
 
       <!-- deploy-agent: new versions go above this line as <h2>X.Y.Z — Month D, YYYY</h2> + <ul>. Keep the format. -->
-      <h2>0.1.6 — October 15, 2026</h2>
+      <h2>Windows 0.1.3 beta — October 27, 2026</h2><ul><li>First public Windows beta, for Windows 11 x64. Self-contained ZIP; no separate .NET download.</li><li>Analysis of accessible fixed drives, with unreadable areas and skips reported.</li><li>Manual cleanup of eligible aged Temp and supported browser HTTP-cache files to the Recycle Bin. Nothing is preselected.</li><li>Certum publisher signatures and timestamps on three ZerX app files and Install.ps1. Install.cmd is a plain launcher, not a signed EXE/MSI installer; SmartScreen warnings may still appear.</li><li>English and Russian interface. <a href="/windows/">Download, installation and limitations</a>.</li></ul>
+      <h2>Mac 0.1.6 — October 15, 2026</h2>
       <ul>
-        <li>First public release, available free on the <a href="https://apps.apple.com/app/id6817715716">Mac App Store</a>.</li>
+        <li>First public Mac release, available free on the <a href="https://apps.apple.com/app/id6817715716">Mac App Store</a>.</li>
         <li>A startup-disk overview of accessible files and folders, including caches, logs, build files and application storage. Unreadable locations are identified; macOS access restrictions still apply.</li>
         <li>Review and confirm cleanup before deleting selected items. Trash is the default; system files and protected personal data are blocked from deletion.</li>
         <li>Scanning starts with a standard folder-access dialog. Full Disk Access is optional and is not required to start a scan.</li>
@@ -72,13 +78,14 @@
     <p>© 2026 ZerX</p>
     <nav aria-label="Footer">
       <ul>
+        <li><a href="/download/">Download</a></li>
         <li><a href="https://github.com/VPNsafe/zerx-releases">GitHub</a></li>
         <li><a href="https://t.me/ZerXapp">Telegram</a></li>
         <li><a href="/safety/">Safety</a></li>
         <li><a href="/privacy/">Privacy</a></li>
         <li><a href="/support/">Support</a></li>
         <li><a href="/changelog/">Changelog</a></li>
-        <li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li>
+        <li><a href="/ru/changelog/" hreflang="ru" lang="ru">Русский</a></li>
       </ul>
     </nav>
   </div>

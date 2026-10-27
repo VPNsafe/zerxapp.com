@@ -40,6 +40,8 @@
     <a class="brand" href="/" aria-label="ZerX home"><img src="/assets/logo.png" width="111" height="56" alt="ZerX"></a>
     <nav class="site-nav" aria-label="Site">
       <ul>
+        <li><a href="/download/">Download</a></li>
+        <li><a href="/windows/">Windows</a></li>
         <li><a href="/privacy/">Privacy</a></li>
         <li><a href="/support/">Support</a></li>
         <li><a href="/changelog/">Changelog</a></li>
@@ -55,13 +57,14 @@
   <div class="container">
     <article class="prose">
 <h1>ZerX Support</h1><p>Developer: Viacheslav Kuzmin.</p>
-<h2>Install the public release</h2><p><a href="https://apps.apple.com/app/id6817715716">Get ZerX on the Mac App Store</a>. Version 0.1.6 supports macOS 13 or later on Apple Silicon and Intel. Use the App Store release for public ratings and reviews; TestFlight is for beta feedback.</p>
-<h2>Email support</h2><p>For help with ZerX or privacy questions, email <a href="mailto:support@techdatacloud.org">support@techdatacloud.org</a>. Include your ZerX and macOS versions and a description of the problem. Do not send passwords or sensitive file contents.</p>
-<h2>Report a problem on GitHub</h2><p><a href="https://github.com/VPNsafe/zerx-releases/issues/new">Open a support request on GitHub</a> (a GitHub account is required). Include your ZerX and macOS versions, what happened and steps to reproduce it. Issues are public: remove personal paths, file names and other sensitive information from text and screenshots.</p>
+<h2>Install the Mac release</h2><p><a href="https://apps.apple.com/app/id6817715716">Get ZerX on the Mac App Store</a>. Version 0.1.6 supports macOS 13 or later on Apple Silicon and Intel. Use the App Store release for public ratings and reviews; TestFlight is for beta feedback.</p>
+<h2>Windows beta 0.1.3</h2><p>For Windows 11 x64, <a href="/windows/">download the beta ZIP and read installation, publisher-signature and cleanup limits</a>. Extract everything and run <code>Install.cmd</code>. No separate .NET download is required. Keep Windows security protections enabled if a warning appears; contact support if the publisher or signature is unexpected.</p><p>“Scan computer” inspects accessible fixed drives and reports unreadable areas. Cleanup is limited to manually selected aged Temp and recognized browser HTTP-cache files. Nothing is preselected; files go to the Windows Recycle Bin. Restore a file from the Recycle Bin if needed. ZerX does not empty it or offer permanent deletion on Windows. Switch English/Russian using the button in the window. Report Windows version, ZerX version and reproducible steps, with private paths removed.</p>
+<h2>Email support</h2><p>For help with ZerX or privacy questions, email <a href="mailto:support@techdatacloud.org">support@techdatacloud.org</a>. Include your ZerX and operating-system versions and a description of the problem. Do not send passwords or sensitive file contents.</p>
+<h2>Report a problem on GitHub</h2><p><a href="https://github.com/VPNsafe/zerx-releases/issues/new">Open a support request on GitHub</a> (a GitHub account is required). Include your ZerX and operating-system versions, what happened and steps to reproduce it. Issues are public: remove personal paths, file names and other sensitive information from text and screenshots.</p>
 <p>App news: <a href="https://t.me/ZerXapp">ZerX Telegram channel</a>.</p>
-<h2>File access and missing folders</h2><p>Select your startup disk in the standard macOS file picker. ZerX scans files your account can read and reports unreadable areas instead of treating them as empty. No administrator privileges are required to scan. Full Disk Access is optional: it can include more protected files and reduce separate permission prompts, but does not remove every macOS restriction.</p><p>Open ZerX Settings → File Access to revisit setup. If you enable Full Disk Access in macOS System Settings → Privacy &amp; Security, quit and reopen ZerX before scanning again.</p>
-<h2>Restore a deleted file</h2><p>If you used the Trash and have not emptied it, open it in Finder and choose Put Back for the file. Permanent deletion and emptying the Trash cannot be undone; recovery requires a separate backup if you have one.</p>
-<h2>Change language</h2><p>Select a language in ZerX Settings and relaunch the app. English, Simplified Chinese, Hindi, Spanish, French and Russian are supported.</p>
+<h2>Mac: file access and missing folders</h2><p>Select your startup disk in the standard macOS file picker. ZerX scans files your account can read and reports unreadable areas instead of treating them as empty. No administrator privileges are required to scan. Full Disk Access is optional: it can include more protected files and reduce separate permission prompts, but does not remove every macOS restriction.</p><p>Open ZerX Settings → File Access to revisit setup. If you enable Full Disk Access in macOS System Settings → Privacy &amp; Security, quit and reopen ZerX before scanning again.</p>
+<h2>Mac: restore a deleted file</h2><p>If you used the Trash and have not emptied it, open it in Finder and choose Put Back for the file. Permanent deletion and emptying the Trash cannot be undone; recovery requires a separate backup if you have one.</p>
+<h2>Mac: change language</h2><p>Select a language in ZerX Settings and relaunch the app. English, Simplified Chinese, Hindi, Spanish, French and Russian are supported.</p>
 <h2>Privacy and license</h2><p>The <a href="/privacy/">privacy policy</a> explains local storage and permissions. The App Store version uses <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple’s standard license agreement</a>. See <a href="/safety/">Safety</a> for deletion rules.</p>
 </article>
   </div>
@@ -72,6 +75,7 @@
     <p>© 2026 ZerX</p>
     <nav aria-label="Footer">
       <ul>
+        <li><a href="/download/">Download</a></li>
         <li><a href="https://github.com/VPNsafe/zerx-releases">GitHub</a></li>
         <li><a href="https://t.me/ZerXapp">Telegram</a></li>
         <li><a href="/safety/">Safety</a></li>

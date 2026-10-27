@@ -1,44 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://zerxapp.com/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/" />
   </url>
   <url>
     <loc>https://zerxapp.com/ru/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/" />
   </url>
   <url>
     <loc>https://zerxapp.com/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/privacy/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/privacy/" />
   </url>
   <url>
     <loc>https://zerxapp.com/ru/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/privacy/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/privacy/" />
   </url>
   <url>
     <loc>https://zerxapp.com/safety/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/safety/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/safety/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/safety/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/safety/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/safety/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/safety/" />
   </url>
   <url>
     <loc>https://zerxapp.com/ru/safety/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/safety/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/safety/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/safety/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/safety/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/safety/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/safety/" />
   </url>
   <url>
     <loc>https://zerxapp.com/changelog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/changelog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/changelog/" />
   </url>
-  <url><loc>https://zerxapp.com/support/</loc></url>
-  <url><loc>https://zerxapp.com/ru/support/</loc></url>
+  <url>
+    <loc>https://zerxapp.com/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/support/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/support/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/support/" />
+  </url>
+  <url>
+    <loc>https://zerxapp.com/ru/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/support/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/support/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/support/" />
+  </url>
+  <url>
+    <loc>https://zerxapp.com/windows/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/windows/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/windows/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/windows/" />
+  </url>
+  <url>
+    <loc>https://zerxapp.com/ru/windows/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/windows/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/windows/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/windows/" />
+  </url>
+  <url>
+    <loc>https://zerxapp.com/download/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/download/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/download/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/download/" />
+  </url>
+  <url>
+    <loc>https://zerxapp.com/ru/download/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/download/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/download/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/download/" />
+  </url>
+  <url>
+    <loc>https://zerxapp.com/ru/changelog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zerxapp.com/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/changelog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zerxapp.com/changelog/" />
+  </url>
 </urlset>

@@ -40,6 +40,8 @@
     <a class="brand" href="/" aria-label="ZerX home"><img src="/assets/logo.png" width="111" height="56" alt="ZerX"></a>
     <nav class="site-nav" aria-label="Site">
       <ul>
+        <li><a href="/download/">Download</a></li>
+        <li><a href="/windows/">Windows</a></li>
         <li><a href="/privacy/">Privacy</a></li>
         <li><a href="/support/">Support</a></li>
         <li><a href="/changelog/">Changelog</a></li>
@@ -56,7 +58,7 @@
     <article class="prose">
 <h1>Deletion rules and limits</h1>
 <p>These rules describe ZerX 0.1.6 from the Mac App Store. Scanning does not delete files. Review selected items before confirming removal: no cleanup tool can determine whether every file matters to you.</p>
-<h2>Scan scope and deletion scope</h2>
+<h2>Mac: scan scope and deletion scope</h2>
 <p>Selecting the startup disk lets ZerX inspect files your account can read. Deletion remains limited to eligible items inside your home folder; system files and other users’ folders are outside that scope. macOS permissions still apply. Unreadable locations are reported, and their contents are not treated as empty.</p>
 <h2>Protected locations</h2>
 <p>ZerX blocks removal of these locations in your home folder, and of folders that contain them. This is a summary of the rules, not a promise that every personal file is automatically recognized.</p>
@@ -76,6 +78,7 @@
 <h2>Trash and permanent deletion</h2>
 <p>Items move to the Trash by default. You can restore them in Finder while they remain there. Moving files to the Trash does not itself reclaim their disk space; empty the Trash only after checking its contents. Permanent deletion is a separate setting, off by default, and requires confirmation. It cannot be undone by ZerX.</p>
 <p>The App Store version does not delete Time Machine snapshots. Its disk totals may differ from macOS Storage because of permissions, snapshots, shared APFS storage and other accounting differences. Keep a separate backup of important data.</p>
+<h2>Windows beta 0.1.3: separate cleanup rules</h2><p>The macOS protections and permanent-deletion setting above do not describe Windows. Windows scans accessible fixed drives but only offers aged Temp files and recognized HTTP-cache files from supported browser profiles for cleanup. Nothing is preselected. Review each path and confirm recycling; scanning and analysis categories do not authorize deletion.</p><p>Windows cleanup excludes system, read-only, encrypted, cloud, reparse, hard-linked and open files. Running browsers or a failed process check block their cache cleanup. Paths, identities and timestamps are rechecked; changed or unavailable files are skipped. These checks do not prove protection from a hostile process running under the same account.</p><p>Files go only to the Windows Recycle Bin. ZerX does not empty it or offer permanent deletion on Windows. Recycled files still occupy disk space. Old files and caches may still matter to you; keep backups. Read <a href="/windows/">the exact Windows scope, age thresholds, signing details and scan limits</a> before using this beta.</p>
 </article>
   </div>
 </main>
@@ -85,6 +88,7 @@
     <p>© 2026 ZerX</p>
     <nav aria-label="Footer">
       <ul>
+        <li><a href="/download/">Download</a></li>
         <li><a href="https://github.com/VPNsafe/zerx-releases">GitHub</a></li>
         <li><a href="https://t.me/ZerXapp">Telegram</a></li>
         <li><a href="/safety/">Safety</a></li>

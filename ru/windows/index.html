@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<title>ZerX для Windows — бета 0.1.3</title>
+<meta name="description" content="Скачайте ZerX 0.1.3 бета для Windows 11 x64. Подписанные приложение и PowerShell-скрипт, локальный анализ и ручная очистка Temp и кэша браузеров.">
+<link rel="canonical" href="https://zerxapp.com/ru/windows/">
+<link rel="alternate" hreflang="en" href="https://zerxapp.com/windows/">
+<link rel="alternate" hreflang="ru" href="https://zerxapp.com/ru/windows/">
+<link rel="alternate" hreflang="x-default" href="https://zerxapp.com/windows/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ZerX">
+<meta property="og:title" content="ZerX для Windows — бета 0.1.3">
+<meta property="og:description" content="Скачайте ZerX 0.1.3 бета для Windows 11 x64. Подписанные приложение и PowerShell-скрипт, локальный анализ и ручная очистка Temp и кэша браузеров.">
+<meta property="og:url" content="https://zerxapp.com/ru/windows/">
+<meta property="og:image" content="https://zerxapp.com/assets/icon-1024.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1024">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ZerX для Windows — бета 0.1.3">
+<meta name="twitter:description" content="Скачайте ZerX 0.1.3 бета для Windows 11 x64. Подписанные приложение и PowerShell-скрипт, локальный анализ и ручная очистка Temp и кэша браузеров.">
+<meta name="twitter:image" content="https://zerxapp.com/assets/icon-1024.png">
+<meta name="theme-color" content="#05070D">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">К содержимому</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="/ru/" aria-label="На главную ZerX"><img src="/assets/logo.png" width="111" height="56" alt="ZerX"></a>
+    <nav class="site-nav" aria-label="Разделы сайта">
+      <ul>
+        <li><a href="/ru/download/">Скачать</a></li>
+        <li><a href="/ru/windows/">Windows</a></li>
+        <li><a href="/ru/privacy/">Конфиденциальность</a></li>
+        <li><a href="/ru/support/">Поддержка</a></li>
+        <li><a href="/ru/changelog/">История версий</a></li>
+        <li><a href="https://github.com/VPNsafe/zerx-releases">GitHub</a></li>
+        <li><a href="https://t.me/ZerXapp">Telegram</a></li>
+        <li><a class="lang" href="/windows/" hreflang="en" lang="en">EN</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="page">
+  <div class="container">
+    <article class="prose">
+<h1>ZerX для Windows <span class="grad">бета</span></h1>
+<p class="caption meta">0.1.3 · Первая публичная бета Windows · <time datetime="2026-10-27">27 октября 2026</time> · Бесплатно · Windows 11 x64</p>
+<p>Узнайте, какие доступные файлы и папки занимают фиксированные диски. Изучите отдельный список поддерживаемых кандидатов на очистку и выберите, что переместить в Корзину Windows. Возможности очистки этой бета-версии уже, чем в версии Mac.</p>
+<div class="hero-cta"><a class="btn btn-primary" href="https://github.com/VPNsafe/zerx-releases/releases/download/windows-v0.1.3/ZerX-0.1.3-win-x64.zip">Скачать ZIP для Windows 0.1.3</a><a class="btn btn-secondary" href="https://github.com/VPNsafe/zerx-releases/releases/download/windows-v0.1.3/ZerX-0.1.3-win-x64.zip.sha256">Контрольная сумма SHA256</a></div>
+<h2>Установка</h2><ol><li>Скачайте ZIP и распакуйте всё содержимое в локальную папку.</li><li>Запустите <code>Install.cmd</code> из распакованной папки. Он запускает подписанный скрипт <code>Install.ps1</code> и устанавливает приложение для вашей учётной записи Windows без запроса прав администратора.</li><li>Откройте ZerX через установленный ярлык. Можно также запустить <code>app\ZerX.exe</code> прямо из распакованного пакета.</li></ol>
+<p>Пакет содержит среду .NET: отдельно скачивать .NET или SDK не нужно. Установка использует папку с номером версии в профиле пользователя и собственные ярлыки; существующие версии и пользовательские файлы сохраняются. Служба, драйвер и автоматическое обновление не устанавливаются.</p>
+<h2>Подпись издателя и целостность загрузки</h2><p><code>app\ZerX.exe</code>, <code>app\ZerX.dll</code>, <code>app\ZerX.Core.dll</code> и <code>Install.ps1</code> имеют проверенные подписи Authenticode издателя <strong>IE Viacheslav Kuzmin</strong> с сертификатом Certum и метками времени. Проверьте издателя в сведениях о подписи Windows.</p>
+<p>ZIP и командный файл <code>Install.cmd</code> не имеют подписи Authenticode. Это не подписанный установщик EXE/MSI. Подпись не гарантирует отсутствия предупреждений SmartScreen. Если Windows показывает неожиданного издателя или недействительную подпись, остановитесь и <a href="/ru/support/">обратитесь в поддержку</a>; оставьте защиту Windows включённой.</p>
+<p>Ожидаемый SHA256 ZIP:</p><div class="code"><pre><code>66AE8C1DDEA7E563E22964C7B04E1EEB111DD5E799CA2F47351B30BF0B0C62F5</code></pre></div><p>Контрольная сумма помогает обнаружить повреждённую или другую загрузку, но сама по себе не доказывает личность издателя. <a href="https://github.com/VPNsafe/zerx-releases/releases/tag/windows-v0.1.3">Предварительный релиз Windows</a> существует отдельно от версии Mac App Store.</p>
+<h2>Сканирование компьютера</h2><p>Нажмите «Сканировать компьютер», чтобы изучить готовые локальные фиксированные диски, доступные вашей учётной записи. Непрочитанные области и другие пропуски отмечаются и не считаются пустыми. Пропущенная папка может содержать много файлов. Остановка сохраняет частичные результаты; закрытие приложения отменяет сканирование.</p><p>Точки повторной обработки не обходятся, элементы с облачными атрибутами пропускаются. Виртуальный диск или диск провайдера может определяться как фиксированный; провайдер может обрабатывать запросы метаданных и обращаться к своему сервису. Поведение подкачки облачных файлов проверено не полностью.</p>
+<h2>Очистка — отдельное действие по вашему выбору</h2><ul><li>Temp: только файлы <code>.tmp</code> и <code>.temp</code> в стандартной папке Temp вашего LocalAppData, у которых время создания и изменения старше 30 дней.</li><li>HTTP-кэш браузеров: распознанные файлы дискового кэша в стандартных профилях Chrome, Edge и Firefox внутри LocalAppData, у которых обе даты старше семи дней. Нестандартные расположения профилей, индексы, cookies, пароли, история, сессии и базы данных сайтов исключены.</li></ul><p>Ничего не выбрано заранее. Проверьте пути, отметьте элементы и подтвердите перемещение в Корзину. Запущенный браузер, включая фоновые процессы, блокирует очистку его кэша; невозможность проверить процессы также блокирует её. Кэш может потребоваться скачать заново. Старый файл всё ещё может быть полезен.</p><p>Системные, доступные только для чтения, зашифрованные, облачные, открытые файлы, точки повторной обработки и файлы с жёсткими ссылками исключены из очистки. Перед перемещением перепроверяются пути, идентичность и даты; изменённые или недоступные файлы пропускаются. Категория анализа не даёт разрешения на очистку. Эти проверки не являются доказанной защитной границей от враждебного процесса той же учётной записи.</p>
+<h2>Ограничения и восстановление</h2><p>ZerX не очищает Корзину и не предлагает безвозвратное удаление на Windows. При необходимости восстановите перемещённый файл из Корзины. Файлы в ней занимают место, пока вы сами её не очистите. Сохраняйте отдельные резервные копии важных данных.</p><p>Логический размер включает повторные жёсткие ссылки; известный размер на диске охватывает только измеренные файлы и учитывает поддерживаемые идентификаторы без повторов. Крупные папки пересекаются. Эти числа не обещают объём освобождаемого места. Категории приблизительно группируют пути и имена, не доказывают принадлежность приложению и не являются рекомендациями по очистке.</p><p>Системное размещение, снимки и метаданные файловой системы учитываются не полностью. Результаты не обещают полного охвата «Системных данных» или совпадения с Параметрами Windows. Интерфейс хранит до 100 крупнейших файлов и папок; ограничения глубины, идентификаторов и группировки могут оставить часть данных неизвестной. ARM64, полная проверка доступности и высокого DPI, более широкая очистка и обновления остаются будущей работой.</p>
+<h2>Конфиденциальность, язык и помощь</h2><p>Приложение Windows читает метаданные файловой системы, а не содержимое файлов; в нём нет сетевых вызовов, телеметрии и аккаунта. Очистка проверяет доступ, не читая содержимое. Подробные результаты сканирования находятся в памяти сеанса. Интерфейс запускается на английском или русском по языку Windows и переключается в окне.</p><p>Прочитайте <a href="/ru/privacy/">политику конфиденциальности</a> и <a href="/ru/safety/">правила безопасности</a> или <a href="/ru/support/">обратитесь в поддержку</a>. Для Mac доступен <a href="https://apps.apple.com/app/id6817715716">ZerX 0.1.6 в Mac App Store</a>.</p>
+</article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <p>© 2026 ZerX</p>
+    <nav aria-label="Подвал">
+      <ul>
+        <li><a href="/ru/download/">Скачать</a></li>
+        <li><a href="https://github.com/VPNsafe/zerx-releases">GitHub</a></li>
+        <li><a href="https://t.me/ZerXapp">Telegram</a></li>
+        <li><a href="/ru/safety/">Безопасность</a></li>
+        <li><a href="/ru/privacy/">Конфиденциальность</a></li>
+        <li><a href="/ru/support/">Поддержка</a></li>
+        <li><a href="/ru/changelog/">История версий</a></li>
+        <li><a href="/windows/" hreflang="en" lang="en">English</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
